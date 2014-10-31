@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.xjy.work.ui.ResultActivity">
+
+    <RadioGroup
+        android:id="@+id/tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/button_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiu_button"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/button_text"/>
+
+        <RadioButton
+            android:id="@+id/button_image1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiu_button"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/button_image1"/>
+
+        <RadioButton
+            android:id="@+id/button_image2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiu_button"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/button_image2"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tab_container"/>
+</RelativeLayout>
